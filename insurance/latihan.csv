@@ -1,0 +1,4 @@
+,age,sex,bmi,children,smoker,region
+0,19.0,1,27.9,0,1,southwest
+1,18.0,0,33.7,2,0,southeast
+2,27.0,1,33.4,3,1,northwest
