@@ -4,26 +4,26 @@ import pandas as pd
 import json
 
 # Load the saved model
-with open('./deployment/proc_model/model_rf.pkl', 'rb') as file_1:
+with open('./insurance/deployment/proc_model/model_rf.pkl', 'rb') as file_1:
   model_rf= joblib.load(file_1)
   
-with open('./deployment/proc_model/model_scaler.pkl', 'rb') as file_2:
+with open('./insurance/deployment/proc_model/model_scaler.pkl', 'rb') as file_2:
   model_scaler=joblib.load(file_2)
 
-with open('./deployment/proc_model/model_encoder1.pkl', 'rb') as file_3:
+with open('./insurance/deployment/proc_model/model_encoder1.pkl', 'rb') as file_3:
   model_encoder1= joblib.load(file_3)
 
-with open('./deployment/proc_model/model_encoder2.pkl', 'rb') as file_4:
+with open('./insurance/deployment/proc_model/model_encoder2.pkl', 'rb') as file_4:
   model_encoder2= joblib.load(file_4)
 
 #load list features
 with open("./deployment/features/list_cat_cols_ohe.txt", "r") as cek1:
   cat_cols_ohe= json.load(cek1)
 
-with open('./deployment/features/list_num_cols.txt', 'r') as cek2:
+with open('./insurance/deployment/features/list_num_cols.txt', 'r') as cek2:
   num_cols= json.load(cek2)
 
-with open('./deployment/features/list_cat_cols_ord.txt', 'r') as cek3:
+with open('./insurance/deployment/features/list_cat_cols_ord.txt', 'r') as cek3:
   cat_cols_ord= json.load(cek3)
 
 
